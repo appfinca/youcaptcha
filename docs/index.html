@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Localization -->
+  <!-- <script src="js/l10n.js"></script> -->
+
+  <!-- Info -->
+  <link rel="shortcut icon" href="img/favicon.png" alt="YouCAPTCHA" type="image/png">
+  <title>YouCAPTCHA - Stop Spam, Earn Coins</title>
+  <meta name="description" content="A free service that protects your website from spam and abuse. Every solved challenge gives you a “coin” that can be turned into real money or trees on the earth.">
+  <meta name="keywords" content="YouCAPTCHA,CAPTCHA,reCAPTCHA,spam,abuse,security,Turing test,humans,bots,challenge">
+  <meta name="author" content="AppFinca Inc.">
+  <link rel="canonical" href="https://www.youcaptcha.com" />
+  <link rel="alternate" href="https://www.youcaptcha.com" hreflang="x-default" />
+  <link rel="alternate" href="https://www.youcaptcha.com" hreflang="en" />
+  <!-- <link rel="alternate" href="https://www.youcaptcha.com/zh-tw" hreflang="zh-tw" /> -->
+
+  <!-- Google Search -->
+  <!-- <meta name="google-site-verification"	content="FIXME" /> -->
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "name": "YouCAPTCHA",
+      "url": "https://www.youcaptcha.com",
+      "logo": "https://stripe.com/img/about/logos/logos/blue.png",
+      "contactPoint" : [{
+        "@type" : "ContactPoint",
+        "url": "https://www.youcaptcha.com/support",
+        "email": "support@youcaptcha.com",
+        "contactType": "customer support"
+      }],
+      "sameAs": [
+        "https://www.facebook.com/youcaptcha",
+        "https://twitter.com/youcaptcha"
+      ]
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Country",
+      "address": {
+        "addressCountry": "US"
+      }
+    }
+  </script>
+
+  <!-- Facebook Open Graph -->
+  <!-- <meta property="fb:app_id" content="FIXME" /> -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.youcaptcha.com/" />
+  <meta property="og:site_name" content="YouCAPTCHA">
+  <meta property="og:title" content="YouCAPTCHA - Stop Spam, Earn Coins" />
+  <meta property="og:description" content="A free CAPTCHA service that benefits you, not AI companies." />
+  <meta property="og:image" content="https://www.youcaptcha.com/img/social.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@youcaptcha">
+  <meta name="twitter:title" content="YouCAPTCHA - Stop Spam, Earn Coins">
+  <meta name="twitter:description" content="A free CAPTCHA service that benefits you, not AI companies.">
+  <meta name="twitter:image" content="https://www.youcaptcha.com/img/social.jpg">
+
+  <!-- Styles -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Quicksand:700|Domine:700|Lora" rel="stylesheet"> -->
+  <link rel="stylesheet" href="css/main.min.css">
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KKNPMBK');</script>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-71035323-6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-71035323-6');
+  </script>
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KKNPMBK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <header id="banner" class="jumbotron jumbotron-fluid skew-bg-container">
+    <div class="skew-bg"></div>
+    <div class="container">
+      <nav class="navbar navbar-expand-md navbar-dark">
+        <a class="navbar-brand" href="index.html">
+          <div class="d-flex align-items-center">
+            <div><img src="img/logo-tree.svg" alt="YouCAPTCHA" /></div>
+            <div class="ml-1"><span class="text-you">You</span><span class="text-captcha">CAPTCHA</span></div>
+          </div>
+        </a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarNav" class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <!-- <li class="nav-item active">
+              <a class="nav-link" href="index.html">For Readers</a>
+            </li> -->
+            <li class="nav-item ml-md-3">
+              <a class="nav-link" href="#">Docs</a>
+            </li>
+            <li class="nav-item ml-md-3">
+              <a class="nav-link" href="support.html">Support</a>
+            </li>
+            <li class="nav-item mt-3 mt-md-0 ml-md-4">
+              <a id="share-tw-top" class="btn btn-outline-light btn-circle" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fwww.youcaptcha.com  &hashtags=youcaptcha" role="button" target="_blank"><i class="fab fa-twitter" role="button"></i></a>              &nbsp;
+              <a id="share-fb-top" class="btn btn-outline-light btn-circle" href="http://www.facebook.com/share.php?u=www.youcaptcha.com&title=youcaptcha" role="button" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="row text-area">
+        <div class="col-12 col-md-6 mr-3">
+          <h1 class="title text-white text-shadow mb-3">Stop spam, earn coins</h1>
+          <p class="text-white text-shadow mb-5">YouCAPTCHA protects your website from spam and abuse using advanced technology. For each solved challenge, YouCAPTCHA rewards you and your audience with <strong>coins</strong> that can be cashed out or turned into trees in Africa to save lives of people and help cool down the earth.</p>
+          <button id="cta-top" type="button" class="btn btn-primary btn-shadow btn-cta">START NOW</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Modal -->
+  <div id="modal-notify" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">REQUEST ACCESS</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+        <!-- TODO Uncheck "Restrict to users in trusted domains" in Google Forms settings. -->>
+        <form id="form-notify" class="form-modal" action="https://docs.google.com/forms/d/e/1FAIpQLSf8o5wSlJn1wh0-YY-ywuBNntG5JtZuZEUU-s7g8xzlYDoj_w/formResponse" target="hidden_iframe" method="post" novalidate>
+          <div class="modal-body">
+            <p class="">At the currently moment, YouCAPTCHA is invitation only. We tightly work with website developers in order to deliver the best user experience and maximum rewards. If you like to try YouCAPTCHA or be notified when it becomes generally available, please fill out the form below. All fields are required.</p>
+            <input type="text" class="d-none" id="feedback-type" name="entry.1597256802" value="index" />
+            <div class="form-group">
+              <label><strong>Your website URL</strong></label>
+              <input id="input-highlight" type="url" class="form-control" name="entry.634043737" required />
+              <div class="invalid-feedback">
+                Please provide a valid URL. If your website is under construction, please provide a tentative URL.
+              </div>
+            </div>
+            <div class="form-group">
+              <label><strong>Estimated monthly unique visitors</strong></label>
+              <select class="form-control" name="entry.1446465950" required>
+                <option value="">--</option>
+                <option>Below 5K</option>
+                <option>5K to 50K</option>
+                <option>50K to 1M</option>
+                <option>Above 1M</option>
+              </select>
+              <div class="invalid-feedback">
+                Please provide an estimate.
+              </div>
+            </div>
+            <div class="form-group">
+              <label><strong>Contact name</strong></label>
+              <input type="text" class="form-control" name="entry.1580516026" required />
+              <div class="invalid-feedback">
+                Please provide your name.
+              </div>
+            </div>
+            <div class="form-group">
+              <label><strong>Contact email address</strong></label>
+              <input type="email" class="form-control" name="entry.575101572" required />
+              <div class="invalid-feedback">
+                Please provide a valid email address.
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div>No spam, seriously.</div>
+            <button type="submit" class="btn btn-primary">SEND</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+
+  <div class="modal fade" id="modal-confirm" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Thank you!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          We will get back to you as soon as possible.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="skew-bg-container d-sm-none">
+    <br/>
+    <div class="skew-bg-follow"></div>
+  </div>
+
+  <section id="demo" class="container device px-4">
+    <div class="row mx-0">
+        <h5 class="question mt-4 mb-3">Select all images with <strong>lemon</strong></h5>
+    </div>
+    <div class="row mx-0">
+      <div class="col px-0">
+        <img class="img-fluid border border-white" src="img/grocery-1.svg">
+      </div>
+      <div class="col px-0">
+        <img class="img-fluid border border-white" src="img/grocery-2.svg">
+      </div>
+      <div class="col px-0">
+        <img class="img-fluid border border-white" src="img/grocery-3.svg">
+      </div>
+    </div>
+    <div class="row mx-0">
+      <div class="col px-0">
+        <img class="img-fluid border border-white" src="img/grocery-4.svg">
+      </div>
+      <div class="col px-0">
+        <img class="img-fluid border border-white" src="img/grocery-5.svg">
+      </div>
+      <div class="col px-0">
+        <img class="img-fluid border border-white" src="img/grocery-6.svg">
+      </div>
+    </div>
+    <div class="row mx-0">
+      <div class="col px-0">
+        <img class="img-fluid border border-white" src="img/grocery-7.svg">
+      </div>
+      <div class="col px-0">
+        <img class="img-fluid border border-white" src="img/grocery-8.svg">
+      </div>
+      <div class="col px-0">
+        <img class="img-fluid border border-white" src="img/grocery-9.svg">
+      </div>
+    </div>
+    <div class="row mt-3 mx-1 mb-4 justify-content-between align-items-center">
+      <div class="ml-2 text-muted"><i class="fas fa-sync-alt"></i></div>
+      <div><button type="submit" class="btn btn-secondary">VERIFY</button></div>
+    </div>
+  </section>
+
+  <section id="how" class="skew-bg-container">
+    <div class="skew-bg"></div>
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col col-sm-7">
+          <h2 class="title text-right">A free CAPTCHA service that benefits YOU</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-4 mb-4">
+          <div >
+            <img class="img-bullet mb-1" src="img/bullet-1.svg" alt="Step 1">
+          </div>
+          <h4 class="mr-2 step-title font-title">SERVE CHALLENGES</h4>
+          <p>Show YouCAPTCHA challenges on your website to stop spam while letting your valid users pass through with ease.</p>
+        </div>
+        <div class="col-12 col-sm-4 mb-4">
+          <div >
+            <img class="img-bullet mb-1" src="img/bullet-2.svg" alt="Step 2">
+          </div>
+          <h4 class="mr-2 step-title font-title">EARN COINS</h4>
+          <p>Every solved challenge produces <strong>2 coins</strong>. One for you, another for the solver (your website user).</p>
+        </div>
+        <div class="col-12 col-sm-4 mb-4">
+            <div >
+              <img class="img-bullet mb-1" src="img/bullet-3.svg" alt="Step 3">
+            </div>
+            <h4 class="mr-2 step-title font-title">GET REWARDS</h4>
+            <p>At the end of every month, you can either cash out your coins or turn them into trees on the earth.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="why">
+    <div class="skew-bg-container">
+      <br/>
+      <div class="skew-bg-follow">
+        <div></div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-center mb-4">
+        <div class="col col-lg-10 col-xl-8">
+          <h2 class="title text-right">You decide the value</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center mb-4">
+        <div class="col col-lg-10  col-xl-8">
+          <p class="text-justify">While other CAPTCHA service providers use human bandwidth to annotate images (to train their own AI programs) and leave you little control of the created value, YouCAPTCHA gives the value and control back to you! We partner with brands to display products that might be interesting to your audience as challenge images, and make money when people see, click, or buy the products. <strong>Every month, we distribute our revenue in proportion to all coin holders.</strong> You can decide how to use your share through the YouCAPTCHA dashboard:</p>
+        </div>
+      </div>
+      <div class="row justify-content-center mb-4">
+        <div class="col col-lg-10 col-xl-8">
+          <div >
+            <img class="img-bullet mb-3" src="img/bullet-dollar.svg" alt="Direct deposit">
+          </div>
+          <h4 class="mr-2 step-title font-title">DIRECT DEPOSIT</h4>
+          <p>If you choose this option, we’ll deposit what you’ve earned into your bank account or debit card at the end of every calendar month. Payments vary based on how much we earn from the brands and how many challenges solved by users on your website.</p>
+        </div>
+      </div>
+      <div class="row align-items-start">
+        <div class="col-12 col-md-5 col-lg-4 order-md-2 mb-4">
+          <div >
+            <img class="img-bullet mb-3" src="img/bullet-tree.svg" alt="Tree planting">
+          </div>
+          <h4 class="mr-2 step-title font-title">TREE PLANTING</h4>
+          <p class="mb-4">We also partner with tree-planting organizations around the world, such as the <a id="treesorg" href="https://www.trees.org/" target="_blank">Trees.org</a>, so you can turn your coins into real trees. By choosing this option you have a direct impact on the earth and lives of families in our rural community.</p>
+          <p>YouCAPTCHA provides a widget that you can embed into your website to show how many trees you've grown to your users.</p>
+        </div>
+        <div class="col-12 col-md-7 col-xl-6 order-md-1 mt-md-5 mb-4 px-0 pr-md-3">
+          <div id="community-carousel-bg" class="d-flex flex-column align-items-end">
+            <div></div>
+            <div></div>
+          </div>
+          <div id="community-carousel" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="5000">
+                  <img src="img/community-1.jpg" class="d-block w-100" alt="Rural community">
+                  <div class="carousel-caption">
+                    <p class="text-shadow text-left"><small>YouCAPTCHA partners with tree-planting organizations around the world to turn your coins into <strong>trees</strong>.</small></p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-interval="7000">
+                  <img src="img/community-2.jpg" class="d-block w-100" alt="Rural community">
+                  <div class="carousel-caption">
+                    <p class="text-shadow text-left"><small>We support planting fast-growing soil rebuilding trees, fruit trees that diversify incomes and nutrition, and tress that can provide forage and fuel-wood.</small></p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-interval="6000">
+                  <img src="img/community-3.jpg" class="d-block w-100" alt="Rural community">
+                  <div class="carousel-caption">
+                    <p class="text-shadow text-left"><small>These trees promote the long-term health of the land and change lives of people forever.</small></p>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#community-carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#community-carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="integration">
+    <div class="container">
+      <div class="row justify-content-center mb-4">
+        <div class="col col-lg-10 col-xl-8">
+          <h2 class="title text-center font-title">Max flexibility &amp;<br/>effortless integration </h2>
+        </div>
+      </div>
+      <div class="row justify-content-center mb-4">
+        <div class="col col-lg-10 col-xl-8">
+          <p class="text-justify">By just adding a few lines of code, you can detect abusive traffic on your website with low user friction. YouCAPTCHA also offers flexible UI options that tailor to your needs and support every use case on your website.</p>
+        </div>
+      </div>
+    
+      <div class="row mb-4">
+        <div class="col-12 col-sm-4 order-1 demo-alt-wrapper mb-5">
+            <div id="demo-alt-1" class="demo-alt container device px-4">
+                <div class="row mx-0">
+                    <h5 class="question mt-4 mb-3">Select all images with <strong>lemon</strong></h5>
+                </div>
+                <div class="row mx-0">
+                  <div class="col px-0">
+                    <img class="img-fluid border border-white" src="img/grocery-1.svg">
+                  </div>
+                  <div class="col px-0">
+                    <img class="img-fluid border border-white" src="img/grocery-2.svg">
+                  </div>
+                  <div class="col px-0">
+                    <img class="img-fluid border border-white" src="img/grocery-3.svg">
+                  </div>
+                  <div class="col px-0">
+                    <img class="img-fluid border border-white" src="img/grocery-4.svg">
+                  </div>
+                  <div class="col px-0">
+                    <img class="img-fluid border border-white" src="img/grocery-5.svg">
+                  </div>
+                  <div class="col px-0">
+                    <img class="img-fluid border border-white" src="img/grocery-6.svg">
+                  </div>
+                  <div class="col px-0">
+                    <img class="img-fluid border border-white" src="img/grocery-7.svg">
+                  </div>
+                  <div class="col px-0">
+                    <img class="img-fluid border border-white" src="img/grocery-8.svg">
+                  </div>
+                  <div class="col px-0">
+                    <img class="img-fluid border border-white" src="img/grocery-9.svg">
+                  </div>
+                </div>
+                <div class="row mt-3 mx-1 mb-4 justify-content-between align-items-center">
+                  <div class="ml-2 text-muted"><i class="fas fa-sync-alt"></i></div>
+                  <div><button type="submit" class="btn btn-secondary">VERIFY</button></div>
+                </div>
+              </div>
+        </div>
+        <div class="col-12 col-sm-4 order-3 demo-alt-wrapper mb-5">
+          <div id="demo-alt-2" class="demo-alt container device px-4">
+            <div class="row mx-0">
+                <h5 class="question mt-4 mb-3">Select all images with <strong>lemon</strong></h5>
+            </div>
+            <div class="row mx-0">
+              <div class="col px-0">
+                <img class="img-fluid border border-white" src="img/grocery-1.svg">
+              </div>
+              <div class="col px-0">
+                <img class="img-fluid border border-white" src="img/grocery-2.svg">
+              </div>
+              <div class="col px-0">
+                <img class="img-fluid border border-white" src="img/grocery-3.svg">
+              </div>
+            </div>
+            <div class="row mx-0">
+              <div class="col px-0">
+                <img class="img-fluid border border-white" src="img/grocery-4.svg">
+              </div>
+              <div class="col px-0">
+                <img class="img-fluid border border-white" src="img/grocery-5.svg">
+              </div>
+              <div class="col px-0">
+                <img class="img-fluid border border-white" src="img/grocery-6.svg">
+              </div>
+            </div>
+            <div class="row mx-0">
+              <div class="col px-0">
+                <img class="img-fluid border border-white" src="img/grocery-7.svg">
+              </div>
+              <div class="col px-0">
+                <img class="img-fluid border border-white" src="img/grocery-8.svg">
+              </div>
+              <div class="col px-0">
+                <img class="img-fluid border border-white" src="img/grocery-9.svg">
+              </div>
+            </div>
+            <div class="row mt-3 mx-1 mb-4 justify-content-between align-items-center">
+              <div class="ml-2 text-muted"><i class="fas fa-sync-alt"></i></div>
+              <div><button type="submit" class="btn btn-secondary">VERIFY</button></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 order-2 demo-alt-wrapper mb-5">
+            <div id="demo-alt-3" class="demo-alt container device p-4">
+              <div class="d-flex justify-content-start align-items-center mx-0">
+                <h1 class="mr-3"><i class="fas fa-check text-secondary"></i></h1>
+                <span class="flex-fill">I'm not a robot.</span>
+                <div class="col px-0">
+                  <img src="img/logo-captcha.svg" class="img-terms" alt="YouCAPTCHA terms">
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="join">
+    <div class="container">
+      <div class="row justify-content-center mb-4">
+        <div class="col-12  col-md-10 col-lg-8 col-xl-6">
+          <h2 class="title text-white mb-5">Get started now.<br/>It's free!</h2>
+          <div class="text-right">
+            <button id="cta-bottom-1" type="button" class="btn btn-primary btn-shadow btn-cta mr-3">CREATE ACCOUNT</button>
+            <button id="cta-bottom-2" type="button" class="btn btn-success btn-shadow btn-cta">EXPLORE DOCS</button>
+          </div>
+        </div>
+          
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="row justify-content-center mb-3">
+        <div class="col-12  col-sm-6 mb-3">
+          <h5 class="title mb-3">STAY CONNECTED</h5>
+          <p>Having questions? We love to help! Drop us an email at <a href="mailto:support@youcaptcha.com">support@youcaptcha.com</a>. We will get back to you as soon as possible.</p>
+          
+        </div>
+        <div class="col-12 col-sm-6 mb-3">
+          <h5 class="title mb-3">COMMITTED TO CHANGE</h5>
+          <p>YouCAPTCHA is developed by AppFinca Inc. We are a group of young, enthusiastic programmers who believe can change the world with you by making better software.</p>
+          <p>Share YouCAPTCHA:</p>
+          <p>
+            <a id="share-tw-bottom" class="btn btn-outline-light btn-circle" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fwww.youcaptcha.com&hashtags=youcaptcha" role="button" target="_blank"><i class="fab fa-twitter" role="button"></i></a>              &nbsp;
+            <a id="share-fb-bottom" class="btn btn-outline-light btn-circle" href="http://www.facebook.com/share.php?u=www.youcaptcha.com&title=youcaptcha" role="button" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          </p>
+        </div>
+      </div>
+      <div class="row justify-content-center mb-3">
+          <div class="col-auto">
+              <p>&copy; AppFinca Inc.</p>
+          </div>
+      </div>
+
+      
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,196 @@
+// Custom variables
+$blue: #007bff;
+$brown-light: #e7cc98;
+$brown: #7e5e1e;
+$brown-dark: #422e15;
+$green-light: #98e6ab;
+$green: #28a745;
+$green-dark: #19672b;
+
+$colors: (
+  "brown-light": $brown-light,
+  "brown": $brown,
+  "brown-dark": $brown-dark,
+  "green-light": $green-light,
+  "green-dark": $green-dark
+);
+
+$theme-colors: (
+  // "primary": $green,
+  "secondary": $brown-dark,
+  // "success": $blue,
+);
+
+$enable-shadows: true;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@include media-breakpoint-up(md) {
+  body {
+    font-size: 1.0625rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  body {
+    font-size: 1.125rem;
+  }
+}
+
+/* Shared Styles */
+
+@font-face {
+  font-family: 'Camphor';
+  font-weight: 300;
+  src: url('../font/camphor/300-light.woff2') format('woff2'), url('../font/camphor/300-light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Camphor';
+  font-weight: 400;
+  src: url('../font/camphor/400-regular.woff2') format('woff2'), url('../font/camphor/400-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Camphor';
+  font-weight: 500;
+  src: url('../font/camphor/500-medium.woff2') format('woff2'), url('../font/camphor/500-medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Camphor';
+  font-weight: 600;
+  src: url('../font/camphor/600-bold.woff2') format('woff2'), url('../font/camphor/600-bold.woff') format('woff');
+} 
+
+body {
+  font-family: 'Camphor', Open Sans, Segoe UI, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #373e42;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.text-shadow {
+  text-shadow: 0 .2rem 1rem rgba(0,0,0,.45);
+}
+
+.btn {
+  font-weight: 600;
+} 
+
+.btn-shadow {
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+} 
+
+.btn-circle {
+  height: 2.375rem;
+  width: 2.375rem;
+  padding: 0;
+  line-height: 2.25rem;
+  border-radius: 9999px;
+}
+
+.skew-bg-container {
+  position: relative;
+}
+
+.skew-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* overflow: hidden; */
+  transform: skewY(-12deg);
+  transform-origin: 0;
+  background-color: black;
+}
+
+.skew-bg-follow {
+  position: absolute;
+  width: 100%;
+  height: 3000%;
+  top:0;
+  transform: skewY(-12deg);
+  transform-origin: 0;
+  background-color: white;
+}
+
+.device {
+  border: 1px solid #f6f9fc;
+  border-radius: 1rem;
+  box-shadow: inset 0 4px 7px 1px #fff, inset 0 -5px 20px rgba(173,186,204,.25), 0 2px 6px rgba(0,21,64,.14), 0 10px 20px rgba(0,21,64,.05);
+  background-color: white;
+}
+
+section .title {
+  color: #28a745;
+}
+
+
+/* .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  h1 {
+    font-size: 2.25rem;
+  }
+  h2 {
+    font-size: 1.875rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+}*/
+
+.modal-header {
+  border-bottom-width: 0;
+}
+
+.modal-footer {
+  border-top-width: 0;
+}
+
+footer {
+  padding: 4rem 1rem 3rem;
+  color: rgba(255,255,255,.5);
+  background-color: #333;
+}
+
+footer a {
+  color: rgba(255,255,255,.8);
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+/* Page-specific styles */
+
+@import "./index";

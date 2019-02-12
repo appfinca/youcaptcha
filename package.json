@@ -1,0 +1,34 @@
+{
+  "name": "landing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css": "npm-run-all css-compile css-prefix css-minify",
+    "css-lint": "stylelint --syntax scss \"scss/**/*.scss\"",
+    "css-compile": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/main.scss docs/css/main.css",
+    "css-prefix": "postcss --replace \"docs/css/*.css\" \"!docs/css/*.min.css\"",
+    "css-minify": "cleancss --level 1 --source-map --source-map-inline-sources --output docs/css/main.min.css docs/css/main.css",
+    "css-watch": "watch 'npm run css' scss"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.4.7",
+    "clean-css-cli": "^4.2.1",
+    "node-sass": "^4.11.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^6.1.1",
+    "stylelint": "^9.10.1",
+    "stylelint-config-recommended-scss": "^3.2.0",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-order": "^2.0.0",
+    "stylelint-scss": "^3.5.3",
+    "watch": "^1.0.2"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.0"
+  }
+}
