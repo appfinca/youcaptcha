@@ -14,10 +14,10 @@ $(document).ready(function() {
   });
 
   // CTA and Modal
-  $('.btn-cta').click(function(e) {
+  $('.modal-trigger').click(function(e) {
     setTimeout(function() {
       $('#modal-notify').modal('show');
-    }, 900);
+    }, 300);
   });
   $('#modal-notify').on('shown.bs.modal', function(e) {
     $('#input-highlight').focus();

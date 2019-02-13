@@ -98,28 +98,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="skew-bg"></div>
     <div class="container">
       <nav class="navbar navbar-expand-md navbar-dark">
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="./">
           <div class="d-flex align-items-center">
             <div><img src="img/logo-tree.svg" alt="YouCAPTCHA" /></div>
             <div class="ml-1"><span class="text-you">You</span><span class="text-captcha">CAPTCHA</span></div>
           </div>
         </a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div id="navbarNav" class="collapse navbar-collapse">
           <ul class="navbar-nav ml-auto">
-            <!-- <li class="nav-item active">
-              <a class="nav-link" href="index.html">For Readers</a>
-            </li> -->
             <li class="nav-item ml-md-3">
-              <a class="nav-link" href="#">Docs</a>
+              <a id="nav-docs" class="nav-link modal-trigger" href="#">Docs</a>
             </li>
             <li class="nav-item ml-md-3">
-              <a class="nav-link" href="support.html">Support</a>
+              <a id="nav-support" class="nav-link modal-trigger" href="#">Support</a>
             </li>
             <li class="nav-item mt-3 mt-md-0 ml-md-4">
-              <a id="share-tw-top" class="btn btn-outline-light btn-circle" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fwww.youcaptcha.com  &hashtags=youcaptcha" role="button" target="_blank"><i class="fab fa-twitter" role="button"></i></a>              &nbsp;
+              <a id="share-tw-top" class="btn btn-outline-light btn-circle" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fwww.youcaptcha.com&hashtags=youcaptcha" role="button" target="_blank"><i class="fab fa-twitter" role="button"></i></a>              &nbsp;
               <a id="share-fb-top" class="btn btn-outline-light btn-circle" href="https://www.facebook.com/share.php?u=www.youcaptcha.com&title=youcaptcha" role="button" target="_blank"><i class="fab fa-facebook-f"></i></a>
             </li>
           </ul>
@@ -129,7 +126,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="col-12 col-md-6 mr-3">
           <h1 class="title text-white text-shadow mb-3">Stop spam, earn coins</h1>
           <p class="text-white text-shadow mb-5">YouCAPTCHA protects your website from spam and abuse using advanced technology. For each solved challenge, YouCAPTCHA rewards you and your audience with <strong>coins</strong> that can be cashed out or turned into trees in Africa to save lives of people and help cool down the earth.</p>
-          <button id="cta-top" type="button" class="btn btn-primary btn-shadow btn-cta">START NOW</button>
+          <button id="cta-top" type="button" class="btn btn-primary btn-shadow modal-trigger">START NOW</button>
         </div>
       </div>
     </div>
@@ -146,7 +143,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- TODO Uncheck "Restrict to users in trusted domains" in Google Forms settings. -->
         <form id="form-notify" class="form-modal" action="https://docs.google.com/forms/d/e/1FAIpQLSf8o5wSlJn1wh0-YY-ywuBNntG5JtZuZEUU-s7g8xzlYDoj_w/formResponse" target="hidden_iframe" method="post" novalidate>
           <div class="modal-body">
-            <p class="">At the current moment, YouCAPTCHA is invitation only. We tightly work with website developers in order to deliver the best user experience and maximum rewards. If you like to try YouCAPTCHA or be notified when it becomes generally available, please fill out the form below.</p>
+            <p class="">YouCAPTCHA is invitation only at the current moment. We tightly work with website developers in order to deliver the best user experience and maximum rewards. If you like to try YouCAPTCHA or be notified when it becomes generally available, please fill out the form below.</p>
             <input type="text" class="d-none" id="feedback-type" name="entry.1597256802" value="index" />
             <div class="form-group">
               <label><strong>Your website URL</strong></label>
@@ -185,6 +182,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
           <div class="modal-footer">
             <!--<div>No spam, seriously.</div>-->
+            <button type="button" class="btn btn-outline-primary mr-auto" data-dismiss="modal">CLOSE</button>
             <button type="submit" class="btn btn-primary">SEND</button>
           </div>
         </form>
@@ -473,7 +471,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="col-12 col-sm-4 order-2 demo-alt-wrapper mb-5">
             <div id="demo-alt-3" class="demo-alt container device p-4">
               <div class="d-flex justify-content-start align-items-center mx-0">
-                <h1 class="mr-3"><i class="fas fa-check text-secondary"></i></h1>
+                <span class="h1 mr-3"><i class="fas fa-check text-secondary"></i></span>
                 <span class="flex-fill">I'm not a robot.</span>
                 <div class="col px-0">
                   <img src="img/logo-captcha.svg" class="img-terms" alt="YouCAPTCHA terms">
@@ -491,8 +489,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="col-12  col-md-10 col-lg-8 col-xl-6">
           <h2 class="title text-white mb-5">Get started now.<br/>It's free!</h2>
           <div class="text-right">
-            <button id="cta-bottom-1" type="button" class="btn btn-primary btn-shadow btn-cta mr-3">CREATE ACCOUNT</button>
-            <button id="cta-bottom-2" type="button" class="btn btn-success btn-shadow btn-cta">EXPLORE DOCS</button>
+            <button id="cta-bottom-1" type="button" class="btn btn-primary btn-shadow modal-trigger mr-3">CREATE ACCOUNT</button>
+            <button id="cta-bottom-2" type="button" class="btn btn-success btn-shadow modal-trigger">EXPLORE DOCS</button>
           </div>
         </div>
           
