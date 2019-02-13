@@ -10552,7 +10552,7 @@ footer a:hover {
   bottom: 0;
   left: 0;
   background-color: #007399;
-  opacity: 0.65;
+  opacity: 0.6;
 }
 
 #community-carousel .carousel-caption {
@@ -10565,6 +10565,7 @@ footer a:hover {
 
 #integration {
   background-color: #f6f9fc;
+  overflow: hidden;
 }
 
 #integration > .container {
