@@ -23,6 +23,8 @@
   --brown-dark: #422e15;
   --green-light: #98e6ab;
   --green-dark: #19672b;
+  --dashboard-light: #f6f9fc;
+  --dashboard: #e8ebef;
   --primary: #007bff;
   --secondary: #422e15;
   --success: #28a745;
@@ -10247,7 +10249,7 @@ h3 {
 footer {
   padding: 4rem 1rem 3rem;
   color: rgba(255, 255, 255, 0.5);
-  background-color: #333;
+  background-color: #343a40;
 }
 
 footer a {
@@ -10255,7 +10257,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #fff;
+  color: white;
 }
 
 /* Page-specific styles */

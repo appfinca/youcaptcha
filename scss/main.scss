@@ -6,13 +6,17 @@ $brown-dark: #422e15;
 $green-light: #98e6ab;
 $green: #28a745;
 $green-dark: #19672b;
+$dashboard-light: #f6f9fc;
+$dashboard: #e8ebef;
 
 $colors: (
   "brown-light": $brown-light,
   "brown": $brown,
   "brown-dark": $brown-dark,
   "green-light": $green-light,
-  "green-dark": $green-dark
+  "green-dark": $green-dark,
+  "dashboard-light": $dashboard-light,
+  "dashboard": $dashboard
 );
 
 $theme-colors: (
@@ -127,7 +131,7 @@ body {
 }
 
 section .title {
-  color: #28a745;
+  color: $green;
 }
 
 
@@ -182,7 +186,7 @@ h3 {
 footer {
   padding: 4rem 1rem 3rem;
   color: rgba(255,255,255,.5);
-  background-color: #333;
+  background-color: $gray-800;
 }
 
 footer a {
@@ -190,7 +194,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #fff;
+  color: white;
 }
 
 /* Page-specific styles */
