@@ -147,7 +147,7 @@ h3 {
   font-size: 1.5rem;
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@include media-breakpoint-up(sm) {
   h1 {
     font-size: 2.25rem;
   }
@@ -159,7 +159,7 @@ h3 {
   }
 }
 
-@media (min-width: 768px) {
+@include media-breakpoint-up(md) {
   h1 {
     font-size: 3rem;
   }

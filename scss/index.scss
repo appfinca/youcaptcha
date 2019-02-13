@@ -9,7 +9,7 @@
   margin: 0;
 }
 
-@media (min-width: 1200px) {
+@include media-breakpoint-up(xl) {
   #banner {
     background-attachment: fixed;
   }
@@ -50,14 +50,14 @@
   padding-bottom: 10rem;
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@include media-breakpoint-up(md) {
   #banner .text-area {
     padding-top: 4rem;
     padding-bottom: 12rem;
   }
 }
 
-@media (min-width: 1200px) {
+@include media-breakpoint-up(xl) {
   #banner .text-area {
     padding-top: 8rem;
     padding-bottom: 18rem;
@@ -74,7 +74,7 @@
   z-index: 1;
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@include media-breakpoint-up(sm) {
   #demo {
     position: absolute;
     left: 60%;
@@ -82,7 +82,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@include media-breakpoint-up(md) {
   #demo {
     width: 280px;
     position: absolute;
@@ -91,7 +91,7 @@
   }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@include media-breakpoint-up(lg) {
   #demo {
     width: 320px;
     position: absolute;
@@ -100,7 +100,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@include media-breakpoint-up(xl) {
   #demo {
     width: 360px;
     position: absolute;
@@ -120,7 +120,7 @@
   top: -6rem;
 }
 
-@media (min-width: 576px) {
+@include media-breakpoint-up(sm) {
   #how {
     top: 0;
   }
@@ -134,28 +134,28 @@
   padding-top: 4rem;
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@include media-breakpoint-up(sm) {
   #how .container {
     padding-top: 4rem;
     padding-bottom: 10rem;
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@include media-breakpoint-up(md) {
   #how .container {
     padding-top: 4rem;
     padding-bottom: 10rem;
   }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@include media-breakpoint-up(lg) {
   #how .container {
     padding-top: 4rem;
     padding-bottom: 16rem;
   }
 }
 
-@media (min-width: 1200px) {
+@include media-breakpoint-up(xl) {
   #how .container {
     padding-top: 4rem;
     padding-bottom: 22rem;
@@ -180,7 +180,7 @@
   background-color: #f6f9fc;
 }
 
-@media (min-width: 768px) {
+@include media-breakpoint-up(md){
   #why {
     padding-bottom: 4rem;
   }
@@ -199,13 +199,13 @@
   background-color: #d6eef5;
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@include media-breakpoint-up(lg) {
   #why .skew-bg-follow > :first-child {
     height: 5rem;
   }
 }
 
-@media (min-width: 1200px) {
+@include media-breakpoint-up(xl) {
   #why .skew-bg-follow > :first-child {
     height: 6rem;
   }
@@ -215,25 +215,25 @@
   margin-top: 3rem;
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@include media-breakpoint-up(sm) {
   #why .container {
     margin-top: 0;
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@include media-breakpoint-up(md) {
   #why .container {
     margin-top: -1rem;
   }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@include media-breakpoint-up(lg) {
   #why .container {
     margin-top: -2rem;
   }
 }
 
-@media (min-width: 1200px) {
+@include media-breakpoint-up(xl) {
   #why .container {
     margin-top: -4rem;
   }
@@ -266,7 +266,7 @@
   
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@include media-breakpoint-up(lg) {
   #community-carousel-bg :nth-child(1) {
     height: 5rem;
     
@@ -278,7 +278,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@include media-breakpoint-up(xl) {
   #community-carousel-bg :nth-child(1) {
     height: 6rem;
     
@@ -325,25 +325,25 @@
   padding-bottom: 2rem; 
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@include media-breakpoint-up(sm) {
   #integration > .container {
     padding-bottom: 3rem;
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@include media-breakpoint-up(md) {
   #integration > .container {
     padding-bottom: 4rem;
   }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@include media-breakpoint-up(lg) {
   #integration > .container {
     padding-bottom: 5rem;
   }
 }
 
-@media (min-width: 1200px) {
+@include media-breakpoint-up(xl) {
   #integration > .container {
     padding-top: 4rem;
     padding-bottom: 6rem;
@@ -384,7 +384,7 @@
   opacity: .5;
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@include media-breakpoint-up(sm) {
   #demo-alt-1 {
     left: -9rem;
     top: 8rem;
@@ -400,7 +400,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@include media-breakpoint-up(md) {
   #demo-alt-1 {
     left: -8rem;
     top: 8rem;
@@ -416,7 +416,7 @@
   }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@include media-breakpoint-up(lg) {
   #demo-alt-1 {
     left: -4rem;
     top: 8rem;
@@ -432,7 +432,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@include media-breakpoint-up(xl) {
   #demo-alt-1 {
     left: 0;
     top: 8rem;
@@ -458,28 +458,28 @@
   padding-bottom: 5rem;
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@include media-breakpoint-up(sm) {
   #join .container {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@include media-breakpoint-up(md) {
   #join .container {
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@include media-breakpoint-up(lg) {
   #join .container {
     padding-top: 8rem;
     padding-bottom: 8rem;
   }
 }
 
-@media (min-width: 1200px) {
+@include media-breakpoint-up(xl) {
   #join .container {
     padding-top: 10rem;
     padding-bottom: 10rem;

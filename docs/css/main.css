@@ -10213,7 +10213,7 @@ h3 {
   font-size: 1.5rem;
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@include media-breakpoint-up(sm) {
   h1 {
     font-size: 2.25rem;
   }
@@ -10225,7 +10225,7 @@ h3 {
   }
 }
 
-@media (min-width: 768px) {
+@include media-breakpoint-up(md) {
   h1 {
     font-size: 3rem;
   }
@@ -10310,7 +10310,7 @@ footer a:hover {
   padding-bottom: 10rem;
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) {
   #banner .text-area {
     padding-top: 4rem;
     padding-bottom: 12rem;
@@ -10335,7 +10335,7 @@ footer a:hover {
   z-index: 1;
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 576px) {
   #demo {
     position: absolute;
     left: 60%;
@@ -10343,7 +10343,7 @@ footer a:hover {
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) {
   #demo {
     width: 280px;
     position: absolute;
@@ -10352,7 +10352,7 @@ footer a:hover {
   }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) {
   #demo {
     width: 320px;
     position: absolute;
@@ -10395,21 +10395,21 @@ footer a:hover {
   padding-top: 4rem;
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 576px) {
   #how .container {
     padding-top: 4rem;
     padding-bottom: 10rem;
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) {
   #how .container {
     padding-top: 4rem;
     padding-bottom: 10rem;
   }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) {
   #how .container {
     padding-top: 4rem;
     padding-bottom: 16rem;
@@ -10460,7 +10460,7 @@ footer a:hover {
   background-color: #d6eef5;
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) {
   #why .skew-bg-follow > :first-child {
     height: 5rem;
   }
@@ -10476,19 +10476,19 @@ footer a:hover {
   margin-top: 3rem;
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 576px) {
   #why .container {
     margin-top: 0;
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) {
   #why .container {
     margin-top: -1rem;
   }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) {
   #why .container {
     margin-top: -2rem;
   }
@@ -10526,7 +10526,7 @@ footer a:hover {
   background-color: #d6f5dd;
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) {
   #community-carousel-bg :nth-child(1) {
     height: 5rem;
   }
@@ -10579,19 +10579,19 @@ footer a:hover {
   padding-bottom: 2rem;
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 576px) {
   #integration > .container {
     padding-bottom: 3rem;
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) {
   #integration > .container {
     padding-bottom: 4rem;
   }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) {
   #integration > .container {
     padding-bottom: 5rem;
   }
@@ -10643,7 +10643,7 @@ footer a:hover {
   opacity: .5;
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 576px) {
   #demo-alt-1 {
     left: -9rem;
     top: 8rem;
@@ -10657,7 +10657,7 @@ footer a:hover {
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) {
   #demo-alt-1 {
     left: -8rem;
     top: 8rem;
@@ -10671,7 +10671,7 @@ footer a:hover {
   }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) {
   #demo-alt-1 {
     left: -4rem;
     top: 8rem;
@@ -10708,21 +10708,21 @@ footer a:hover {
   padding-bottom: 5rem;
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 576px) {
   #join .container {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) {
   #join .container {
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) {
   #join .container {
     padding-top: 8rem;
     padding-bottom: 8rem;
