@@ -86,6 +86,9 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'UA-71035323-6');
+
+    // Google Ads conversion "youcaptcha-lead"
+    gtag('config', 'AW-956876247');
   </script>
 </head>
 
@@ -133,7 +136,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </header>
   
   <!-- Modal -->
-  <div id="modal-notify" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+  <div id="modal-lead" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -141,7 +144,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         </div>
         <!-- TODO Uncheck "Restrict to users in trusted domains" in Google Forms settings. -->
-        <form id="form-notify" class="form-modal" action="https://docs.google.com/forms/d/e/1FAIpQLSf8o5wSlJn1wh0-YY-ywuBNntG5JtZuZEUU-s7g8xzlYDoj_w/formResponse" target="hidden_iframe" method="post" novalidate>
+        <form id="form-lead" class="form-modal" action="https://docs.google.com/forms/d/e/1FAIpQLSf8o5wSlJn1wh0-YY-ywuBNntG5JtZuZEUU-s7g8xzlYDoj_w/formResponse" target="hidden_iframe" method="post" novalidate>
           <div class="modal-body">
             <p class="">YouCAPTCHA is invitation only at the current moment. We tightly work with website developers in order to deliver the best user experience and maximum rewards. If you like to try YouCAPTCHA or be notified when it becomes generally available, please fill out the form below.</p>
             <input type="text" class="d-none" id="feedback-type" name="entry.1597256802" value="index" />

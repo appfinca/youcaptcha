@@ -16,15 +16,15 @@ $(document).ready(function() {
   // CTA and Modal
   $('.modal-trigger').click(function(e) {
     setTimeout(function() {
-      $('#modal-notify').modal('show');
+      $('#modal-lead').modal('show');
     }, 300);
   });
-  $('#modal-notify').on('shown.bs.modal', function(e) {
+  $('#modal-lead').on('shown.bs.modal', function(e) {
     $('#input-highlight').focus();
   });
 
   // Modal Form
-  $('#form-notify').submit(function(e) {
+  $('#form-lead').submit(function(e) {
     var form = $(this)[0];
     form.classList.add('was-validated');
     if (form.checkValidity() === false) {
@@ -32,12 +32,16 @@ $(document).ready(function() {
       e.stopPropagation();
       return false;
     }
-    gtag('event', 'form-notify', {
+    gtag('event', 'form-lead', {
       'event_category' : category,
       'event_label' : label
     });
+    // Google Ads conversion "youcaptcha-lead"
+    gtag('event', 'conversion', {
+      'send_to': 'AW-956876247/s5QXCNS6lZUBENeLo8gD'
+    });
     setTimeout(function() {
-      $('#modal-notify').modal('hide');
+      $('#modal-lead').modal('hide');
       $('#modal-confirm').modal('show');
     }, 500);
   });
