@@ -2,12 +2,17 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-attachment: fixed;
   background-color: black;
   background-image: url("../img/banner-tree.jpg");
   
   padding: 0;
   margin: 0;
+}
+
+@media (min-width: 1200px) {
+  #banner {
+    background-attachment: fixed;
+  }
 }
 
 #banner .skew-bg {
