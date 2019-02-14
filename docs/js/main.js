@@ -14,7 +14,7 @@ $(document).ready(function() {
   });
 
   // CTA and Modal
-  $('.modal-trigger').click(function(e) {
+  $('.lead-trigger').click(function(e) {
     setTimeout(function() {
       $('#modal-lead').modal('show');
     }, 300);

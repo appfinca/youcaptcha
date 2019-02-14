@@ -113,10 +113,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div id="navbarNav" class="collapse navbar-collapse">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item ml-md-3">
-              <a id="nav-docs" class="nav-link modal-trigger" href="#">Docs</a>
+              <a id="nav-docs" class="nav-link lead-trigger" href="#">Docs</a>
             </li>
             <li class="nav-item ml-md-3">
-              <a id="nav-support" class="nav-link modal-trigger" href="#">Support</a>
+              <a id="nav-support" class="nav-link lead-trigger" href="#">Support</a>
             </li>
             <li class="nav-item mt-3 mt-md-0 ml-md-4">
               <a id="share-tw-top" class="btn btn-outline-light btn-circle" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fwww.youcaptcha.com&hashtags=youcaptcha" role="button" target="_blank"><i class="fab fa-twitter"></i></a>              &nbsp;
@@ -129,7 +129,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="col-12 col-md-6 mr-3">
           <h1 class="title text-white text-shadow mb-3">Stop spam, earn coins</h1>
           <p class="text-white text-shadow mb-5">YouCAPTCHA protects your website from spam and abuse using advanced technology. For each solved challenge, YouCAPTCHA rewards you and your audience with <strong>coins</strong> that can be cashed out or turned into trees in Africa to save lives of people and help cool down the earth.</p>
-          <button id="cta-top" type="button" class="btn btn-primary btn-shadow modal-trigger">START NOW</button>
+          <button id="cta-top" type="button" class="btn btn-primary btn-shadow lead-trigger">START NOW</button>
         </div>
       </div>
     </div>
@@ -150,37 +150,41 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <input type="text" class="d-none" id="feedback-type" name="entry.1597256802" value="index" />
             <div class="form-group">
               <label><strong>Your website URL</strong></label>
-              <input id="input-highlight" type="url" class="form-control" name="entry.634043737" required />
-              <div class="invalid-feedback">
+              <input id="input-highlight" type="url" class="form-control" name="entry.634043737" />
+              <!--<div class="invalid-feedback">
                 Please provide a valid URL. If your website is under construction, please provide a tentative URL.
-              </div>
+              </div>-->
             </div>
             <div class="form-group">
               <label><strong>Estimated monthly unique visitors</strong></label>
-              <select class="form-control" name="entry.1446465950" required>
+              <select class="form-control" name="entry.1446465950">
                 <option value="">--</option>
                 <option>Below 5K</option>
                 <option>5K to 50K</option>
                 <option>50K to 1M</option>
                 <option>Above 1M</option>
               </select>
-              <div class="invalid-feedback">
+              <!--<div class="invalid-feedback">
                 Please provide an estimate.
-              </div>
+              </div>-->
             </div>
             <div class="form-group">
-              <label><strong>Contact name</strong></label>
+              <label><strong>Contact name <span class="text-danger">*</span></strong></label>
               <input type="text" class="form-control" name="entry.1580516026" required />
               <div class="invalid-feedback">
                 Please provide your name.
               </div>
             </div>
             <div class="form-group">
-              <label><strong>Contact email address</strong></label>
+              <label><strong>Contact email address <span class="text-danger">*</span></strong></strong></label>
               <input type="email" class="form-control" name="entry.575101572" required />
               <div class="invalid-feedback">
                 Please provide a valid email address.
               </div>
+            </div>
+            <div class="form-group d-none">
+              <label><strong>Integrity</strong></label>
+              <input type="email" class="form-control" name="entry.787563390" />
             </div>
           </div>
           <div class="modal-footer justify-content-between">
@@ -331,7 +335,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
           <h4 class="mr-2 step-title font-title">TREE PLANTING</h4>
           <p class="mb-4">We also partner with tree-planting organizations around the world, such as the <a id="treesorg" href="https://www.trees.org/" target="_blank">Trees.org</a>, so you can turn your coins into real trees. By choosing this option you have a direct impact on the earth and lives of families in our rural community.</p>
-          <p>YouCAPTCHA provides a widget that you can embed into your website to show how many trees you've grown to your users.</p>
+          <p>YouCAPTCHA provides an optional widget that you can embed into your website to show how many trees you've grown to your users.</p>
         </div>
         <div class="col-12 col-md-7 col-xl-6 order-md-1 mt-md-5 mb-4 px-0 pr-md-3">
           <div id="community-carousel-bg" class="d-flex flex-column align-items-end">
@@ -355,7 +359,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="carousel-item" data-interval="6000">
                   <img src="img/community-3.jpg" class="d-block w-100" alt="Rural community">
                   <div class="carousel-caption">
-                    <p class="text-shadow text-left"><small>These trees promote the long-term health of the land and change lives of people forever.</small></p>
+                    <p class="text-shadow text-left"><small>These trees promote the long-term health of the land and could change lives of people forever.</small></p>
                   </div>
                 </div>
               </div>
@@ -492,8 +496,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="col-12  col-md-10 col-lg-8 col-xl-6">
           <h2 class="title text-white mb-5">Get started now.<br/>It's free!</h2>
           <div class="text-right">
-            <button id="cta-bottom-account" type="button" class="btn btn-primary btn-shadow modal-trigger mr-3">CREATE ACCOUNT</button>
-            <button id="cta-bottom-docs" type="button" class="btn btn-success btn-shadow modal-trigger">EXPLORE DOCS</button>
+            <button id="cta-bottom-account" type="button" class="btn btn-primary btn-shadow lead-trigger mr-3">CREATE ACCOUNT</button>
+            <button id="cta-bottom-docs" type="button" class="btn btn-success btn-shadow lead-trigger">EXPLORE DOCS</button>
           </div>
         </div>
           
